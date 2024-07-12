@@ -180,11 +180,16 @@
 /*** Topbar End ***/
 
 /*** Navbar ***/
+/*** Navbar ***/
+.navbar-light {
+    background-color: var(--bs-purple) !important; /* Set navbar background to purple */
+}
+
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding: 35px 15px;
-    color: var(--bs-yellow) !important;
+    color: white !important; /* Set text color to white */
     font-size: 17px;
     font-weight: 400;
     outline: none;
@@ -193,7 +198,7 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 15px;
-    color: var(--bs-purple) !important;
+    color: white !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -202,11 +207,12 @@
 }
 
 .navbar-light .navbar-brand h1 {
-    color: var(--bs-yellow);
+    color: white !important; /* Set brand text color to white */
+    font-size: 1.25em; /* Set font size for "Pleasure" */
 }
 
 .sticky-top.navbar-light .navbar-brand h1 {
-    color: var(--bs-yellow);
+    color: white !important; /* Set brand text color to white */
 }
 
 .navbar-light .navbar-brand img {
@@ -243,7 +249,7 @@
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-purple);
-    color: var(--purple);
+    color: white; /* Set dropdown text color to white */
 }
 
 .navbar .nav-item:hover .dropdown-menu {
@@ -256,13 +262,13 @@
 
 @media (max-width: 991.98px) {
     .navbar-light .navbar-brand h1 {
-        color: var(--bs-purple);
+        color: white !important;
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
-        border: 1px solid var(--bs-purple);
-        color: var(--bs-purple);
+        border: 1px solid white;
+        color: white;
     }
 
     .navbar-light .navbar-collapse {
@@ -273,21 +279,20 @@
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
-        color: var(--bs-dark) !important;
+        color: white !important; /* Set nav link text color to white */
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
-    .navbar-light .navbar-nav .nav-link.active  {
-        color: var(--bs-purple) !important;
+    .navbar-light .navbar-nav .nav-link.active {
+        color: var(--bs-yellow) !important;
     }
 
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
 
-    .navbar-light .navbar-brand .pleasure,
-    .navbar-light .navbar-brand .safari-tours {
-        font-size: 0.75em; /* Reduce the size of "Pleasure" and "Safari Tours" on small screens */
+    .navbar-light .navbar-brand .pleasure {
+        font-size: 1.25em; /* Set font size for "Pleasure" */
     }
 }
 
@@ -297,14 +302,14 @@
         width: 100%;
         top: 0;
         left: 0;
-        background: var(--bs-light); /* Ensure background is white on all screens */
+        background-color: var(--bs-purple) !important; /* Set navbar background to purple */
         border-bottom: 1px solid rgba(255, 255, 255, .1);
         z-index: 999;
     }
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light); /* Ensure background is white on all screens */
+        background-color: var(--bs-purple) !important; /* Set navbar background to purple */
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -329,6 +334,15 @@
         display: none;
     }
 }
+
+/* Ensure navbar remains sticky on all screens */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: var(--bs-purple) !important; /* Set navbar background to purple */
+}
+
 
 
 /*** Carousel Hero Header Start ***/
