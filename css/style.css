@@ -1,4 +1,10 @@
-
+:root {
+    --purple: #6f42c1;
+    --yellow: #ffc107;
+    --white: #ffffff;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+}
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
@@ -1278,12 +1284,15 @@
 /*** Footer Start ***/
 .footer {
     background: var(--bs-purple);
+    color: var(--white);
+    padding: 2rem 0;
 }
 
 .footer .footer-item a {
     line-height: 30px;
     color: white;
     transition: 0.5s;
+    font-size: var(--font-size-base);
 }
 
 .footer .footer-item a:hover {
@@ -1332,11 +1341,37 @@
 }
 
 
-/*** Footer End ***/
-
-/*** copyright Start ***/
-.copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark) !important;
+@media (max-width: 1200px) {
+    :root {
+        --font-size-base: 0.95rem;
+        --font-size-large: 1.15rem;
+    }
 }
-/*** copyright end ***/
+
+@media (max-width: 992px) {
+    :root {
+        --font-size-base: 0.9rem;
+        --font-size-large: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 0.85rem;
+        --font-size-large: 1.05rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --font-size-base: 0.8rem;
+        --font-size-large: 1rem;
+    }
+}
+
+/* Responsive Images */
+.footer .footer-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
