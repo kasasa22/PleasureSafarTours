@@ -179,7 +179,6 @@
 }
 /*** Topbar End ***/
 
-
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
@@ -255,13 +254,7 @@
     opacity: 1;
 }
 
-
 @media (max-width: 991.98px) {
-    .sticky-top.navbar-light {
-        position: relative;
-        background: var(--bs-purple);
-    }
-
     .navbar-light .navbar-brand h1 {
         color: var(--bs-purple);
     }
@@ -291,21 +284,27 @@
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
+
+    .navbar-light .navbar-brand .pleasure,
+    .navbar-light .navbar-brand .safari-tours {
+        font-size: 0.75em; /* Reduce the size of "Pleasure" and "Safari Tours" on small screens */
+    }
 }
 
 @media (min-width: 992px) {
     .navbar-light {
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 0;
         left: 0;
+        background: var(--bs-light); /* Ensure background is white on all screens */
         border-bottom: 1px solid rgba(255, 255, 255, .1);
         z-index: 999;
     }
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light);
+        background: var(--bs-light); /* Ensure background is white on all screens */
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -330,6 +329,7 @@
         display: none;
     }
 }
+
 
 /*** Carousel Hero Header Start ***/
 .carousel-header .carousel-control-prev,
