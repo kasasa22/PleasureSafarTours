@@ -1277,18 +1277,60 @@
 
 /*** Footer Start ***/
 .footer {
-    background:rgb(46, 2, 46);
+    background: var(--bs-purple);
 }
+
 .footer .footer-item a {
     line-height: 30px;
-    color: var(--bs-white);
+    color: white;
     transition: 0.5s;
 }
 
 .footer .footer-item a:hover {
     letter-spacing: 2px;
-    color: var(--bs-purple);
+    color: yellow;
 }
+
+.text-purple {
+    color: var(--bs-yellow);
+}
+
+.btn-square.btn-primary {
+    background-color: purple;
+    border-color: purple;
+}
+
+.btn-square.btn-primary:hover {
+    background-color: yellow;
+    border-color: yellow;
+}
+
+.footer .footer-item .text-purple:hover {
+    color: white;
+}
+
+.newsletter-input {
+    padding: 10px;
+    border: 1px solid purple;
+    width: calc(100% - 100px);
+    border-radius: 5px;
+    color: purple;
+}
+
+.newsletter-button {
+    background: purple;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: -5px;
+    transition: 0.3s;
+}
+
+.newsletter-button:hover {
+    background: yellow;
+    color: purple;
+}
+
 
 /*** Footer End ***/
 
