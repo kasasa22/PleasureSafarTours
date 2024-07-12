@@ -305,7 +305,7 @@
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light);
+        background: var(--bs-purple);
     }
 
     .navbar-light .navbar-nav .nav-link::before {
