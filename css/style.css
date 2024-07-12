@@ -351,42 +351,22 @@
     background: transparent;
 }
 
-.carousel-header .carousel-control-prev .carousel-control-prev-icon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    padding: 25px 30px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 50px;
-    background-size: 60% 60%;
-}
-
+.carousel-header .carousel-control-prev .carousel-control-prev-icon,
 .carousel-header .carousel-control-next .carousel-control-next-icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 25px 30px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 0;
-    background-size: 60% 60%;
-
+    background-color: var(--bs-purple); /* Set the background color to purple */
+    color: white; /* Set the icon color to white */
+    padding: 15px;
+    border-radius: 50%;
 }
 
-.carousel-header .carousel .carousel-indicators li,
-.carousel-header .carousel .carousel-indicators li,
 .carousel-header .carousel .carousel-indicators li {
-    opacity: 0;
+    background-color: var(--bs-yellow); /* Set the indicator color to yellow */
+    opacity: 1;
 }
 
 .carousel-header .carousel-inner .carousel-item {
     position: relative;
-    min-height: 100vh 
+    min-height: 100vh;
 }
 
 .carousel-header .carousel-inner .carousel-item img {
@@ -396,7 +376,7 @@
     object-fit: cover;
 }
 
-.carousel-header .carousel-inner .carousel-item .carousel-caption  {
+.carousel-header .carousel-inner .carousel-item .carousel-caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -409,6 +389,29 @@
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
     background-size: cover;
+}
+
+.carousel-header .carousel-caption h4 {
+    color: var(--bs-yellow); /* Set subtitle text color to yellow */
+}
+
+.carousel-header .carousel-caption h1 {
+    color: var(--bs-purple); /* Set main text color to purple */
+}
+
+.carousel-header .carousel-caption p {
+    color: white; /* Set paragraph text color to white */
+}
+
+.carousel-header .btn-hover-bg.btn {
+    background-color: var(--bs-purple); /* Set button background color to purple */
+    color: white; /* Set button text color to white */
+    transition: background-color 0.3s ease;
+}
+
+.carousel-header .btn-hover-bg.btn:hover {
+    background-color: var(--bs-yellow); /* Set button hover background color to yellow */
+    color: var(--bs-purple); /* Set button hover text color to purple */
 }
 
 @media (max-width: 768px) {
@@ -426,13 +429,20 @@
     .carousel-header .carousel-control-next .carousel-control-next-icon {
         opacity: 0;
     }
-    
+
     .search-bar {
         margin-top: -100px;
         transition: 0.5s;
     }
 }
+
+/* Ensure only one part of the carousel is displayed */
+.carousel-item:not(.active) {
+    display: none;
+}
+
 /*** Carousel Hero Header End ***/
+
 
 
 /*** Single Page Hero Header Start ***/
