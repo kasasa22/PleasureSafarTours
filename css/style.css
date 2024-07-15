@@ -186,7 +186,6 @@
 /*** Topbar End ***/
 
 /*** Navbar ***/
-/*** Navbar ***/
 .navbar-light {
     background-color: var(--bs-purple) !important; /* Set navbar background to purple */
 }
@@ -236,7 +235,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-left: 2px;
 }
 
 @media (min-width: 1200px) {
@@ -272,7 +271,7 @@
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
-        padding: 10px 20px;
+        padding: 10px 10px;
         border: 1px solid white;
         color: white;
     }
@@ -286,6 +285,7 @@
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         color: white !important; /* Set nav link text color to white */
+        font-size: 14px; /* Adjust font size for mobile view */
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
@@ -298,7 +298,7 @@
     }
 
     .navbar-light .navbar-brand .pleasure {
-        font-size: 1.25em; /* Set font size for "Pleasure" */
+        font-size: 1.0em; /* Set font size for "Pleasure" */
     }
 }
 
